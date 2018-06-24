@@ -1,0 +1,8 @@
+node_modules/*
+.git/*
+client/*
+bin/*
+swagger/*
+uml/*
+npm-debug.log
+log/*

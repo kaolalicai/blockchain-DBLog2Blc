@@ -1,0 +1,30 @@
+{
+    "name": "oplog2",
+    "version": "1.0.0",
+    "description": "记录 mongo",
+    "main": "index.js",
+    "scripts": {
+        "start": "node build/app.js",
+        "build": "./node_modules/.bin/tsc -p ./",
+        "dev": "NODE_ENV=development ts-node src/app.ts -P ./",
+        "tslint": "./node_modules/.bin/tslint -c tslint.json 'src/**/*.ts' --fix",
+        "cov": "istanbul cover _mocha -- -t 5000  --recursive test",
+        "test": "NODE_ENV=test mocha -R spec -t 5000 --recursive src"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/moment": "^2.13.0",
+        "@types/mongodb": "^2.2.2",
+        "babel-eslint": "^7.2.3",
+        "ts-node": "^4.1.0",
+        "tslint": "^5.4.3",
+        "tslint-config-standard": "^6.0.1"
+    },
+    "dependencies": {
+        "config": "^1.25.1",
+        "mongo-oplog": "^2.1.0",
+        "mongodb": "^3.0.1",
+        "typescript": "^2.6.2"
+    }
+}
